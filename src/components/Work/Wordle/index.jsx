@@ -32,6 +32,8 @@ export default function Wordle_Clone() {
       <div className={styles.imageContainer}>
         <Image 
         src="/images/wordle.png"
+        width={900}
+        height={525}
         />
       </div>
       

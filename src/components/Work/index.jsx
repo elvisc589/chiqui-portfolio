@@ -115,8 +115,8 @@ export default function Home() {
                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
                     <Image 
                     src={`/images/${src}`}
-                    width={900}
-                    height={525}
+                    width={300}
+                    height={0}
                     alt="image"
                     />
                 </div>
