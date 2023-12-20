@@ -41,9 +41,9 @@ export default function index(style) {
                 
                 <p className={styles.copyright}>©</p>
                 <div className={styles.name}>
-                    <p className={styles.codeBy}>Code by</p>
-                    <p className={styles.elvis}>Elvis</p>
-                    <p className={styles.chiqui}>Chiqui</p>
+                    <p className={styles.codeBy}>Elvis</p>
+                    <p className={styles.elvis}>Chiqui</p>
+                    <p className={styles.chiqui}>Portfolio</p>
                 </div>
                 
             </div>

@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 
 export default function UNC_CSXL() {
-  const phrase = "The official UNC CSXL website lacked interactions between students. The friendship system is a digital solution, that allows students to view when their friends are currently checked in at the csxl so that they could join in on a study session, use it as a convenient meeting spot for a group project, or brief socialization.";
+  const phrase = "The official UNC CSXL website lacked interactions between students. Along with three developers, we created The friendship system. A digital solution, that allows students to view when their friends are currently checked in at the csxl so that they could join in on a study session, use it as a convenient meeting spot for a group project, or brief socialization. This feature was built with Angular, Typescript, PostgreSQL, FastAPI, Docker, and Red Hat OpenShift for cloud deployment. ";
   const description = useRef(null);
   const isInView = useInView(description)
 

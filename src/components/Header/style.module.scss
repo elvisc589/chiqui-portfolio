@@ -34,12 +34,12 @@
                 position: relative;
                 transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
                 &:nth-of-type(2){
-                    padding-left: 0.3em;
+                    padding-left: 0.4em;
                 }
                 &:nth-of-type(3){
                     position: absolute;
                     left: 120px;
-                    padding-left: 0.3em;
+                    padding-left: 0.4em;
                 }
             }
         }
@@ -48,15 +48,15 @@
                 transform: rotate(360deg);
             }
             .name{
-                padding-right: 30px;
+                padding-right: 35px;
                 .codeBy{
                     transform: translateX(-100%);
                 }
                 .elvis{
-                    transform: translateX(-65px);
+                    transform: translateX(-40px);
                 }
                 .chiqui{
-                    transform: translateX(-65px);
+                    transform: translateX(-70px);
                 }
             }
         }

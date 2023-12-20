@@ -1,7 +1,7 @@
 import styles from './style.module.scss';
 import Image from 'next/image';
 import Rounded from '../../common/RoundedButton';
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '../../common/Magnetic';
 
@@ -14,6 +14,20 @@ export default function index() {
     const x = useTransform(scrollYProgress, [0, 1], [0, 100])
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
+    const [localTime, setLocalTime] = useState('');
+
+    useEffect(() => {
+        const getLocalTime = () => {
+            const now = new Date();
+            const offset = -5; // Offset for Eastern Standard Time (EST)
+            const utc = now.getTime() + now.getTimezoneOffset() * 60000;
+            const estTime = new Date(utc + 3600000 * offset);
+            const formattedTime = estTime.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true});
+            setLocalTime(formattedTime);
+        };
+        getLocalTime();
+    }, []); // Empty array ensures this runs once on initial load
+
     return (
         <motion.div style={{y}} ref={container} className={styles.contact}>
             <div className={styles.body}>
@@ -60,7 +74,7 @@ export default function index() {
                         </span>
                         <span>
                             <h3>Local Time</h3>
-                            <p>9:26 AM EST</p>
+                            <p>{localTime} EST</p>
                         </span>
                     </div>
                     <div>
