@@ -60,7 +60,7 @@ export default function index() {
                         </span>
                         <span>
                             <h3>Local Time</h3>
-                            <p>9:56 PM EST</p>
+                            <p>9:26 AM EST</p>
                         </span>
                     </div>
                     <div>
