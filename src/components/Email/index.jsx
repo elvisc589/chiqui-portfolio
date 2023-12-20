@@ -15,6 +15,8 @@ export default function index() {
     const x = useTransform(scrollYProgress, [0, 1], [0, 100])
     const y = useTransform(scrollYProgress, [0, 1], [-500, 0])
     const rotate = useTransform(scrollYProgress, [0, 1], [120, 90])
+
+    const [localTime, setLocalTime] = useState('');
     useEffect(() => {
         const getLocalTime = () => {
             const now = new Date();
