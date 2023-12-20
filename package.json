@@ -1,0 +1,21 @@
+{
+  "name": "myportfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "framer-motion": "^10.16.16",
+    "gsap": "^3.12.3",
+    "locomotive-scroll": "^4.1.4",
+    "next": "^14.0.4",
+    "react": "^18",
+    "react-dom": "^18",
+    "sass": "^1.69.5",
+    "sharp": "^0.33.0"
+  }
+}

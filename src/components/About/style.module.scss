@@ -1,0 +1,120 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+  position: relative;
+  background-color: #141516;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+  padding-top: 200px;
+  z-index: 2;
+
+  .body {
+    
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    gap: 20px; /* Adjust spacing between elements */
+    width: 100%;
+    max-width: 1800px;
+    color: white;
+
+    .title {
+      border-bottom: 1px solid rgb(134, 134, 134);
+      padding-bottom: 100px;
+      position: relative;
+      margin-left: 200px;
+      margin-right: 200px;
+      h2{
+        font-size: 5vw;
+        margin: 0px;
+        font-weight: 300;
+      }
+      @media (max-width: 768px) {
+        /* Media query for smaller screens */
+        margin-left: 75px; /* Adjusted margin for smaller screens */
+        margin-right: 75px; /* Adjusted margin for smaller screens */
+        
+    
+      }
+      
+    }
+
+
+    .columns {
+      padding-top: 100px;
+      padding-bottom: 100px;
+      margin-left: 200px;
+      margin-right: 200px;
+
+      position: relative;
+      display: flex;
+      flex-direction: row; /* Align items in a row */
+      justify-content: space-between; /* Evenly distribute columns */
+
+      .info {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px; /* Adjust spacing between info and image */
+
+        /* Add more styling if needed */
+      }
+
+      .imageContainer {
+        flex: 1;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        .profileImage {
+          width: auto;
+              height: auto;
+              max-width: 100%;
+              max-height: 100%;
+              object-fit: contain;
+        }
+      }
+      }
+      @media (max-width: 768px) {
+        /* Media query for smaller screens */
+        .body{
+        padding-top: 125px;
+          .title{
+            padding-bottom: 50px;
+          }
+        }
+  
+        .columns {
+          padding-bottom: 50px; /* Adjust padding for smaller screens */
+          margin-left: 75px; /* Adjusted margin for smaller screens */
+          margin-right: 75px; /* Adjusted margin for smaller screens */
+          flex-direction: column; /* Change to a single column layout for smaller screens */
+          
+    
+          .info {
+            width: 100%; /* Occupy full width of the column */
+            flex: none; /* Reset flex property */
+            padding-bottom: 40px;
+          }
+  
+          .imageContainer {
+            width: 100%; /* Occupy full width of the column */
+            flex: none; /* Reset flex property */
+            align-self: center;
+            justify-content: center;
+
+            .profileImage{
+              width: auto;
+              height: auto;
+              max-width: 100%;
+              max-height: 100%;
+              object-fit: contain;
+            }
+
+          }
+        }
+      }
+    }
+}
+
