@@ -34,7 +34,7 @@ export default function index() {
                 <div className={styles.title}>
                     <span>
                         <div className={styles.imageContainer}>
-                            <Image 
+                            <Image
                             fill={true}
                             alt={"image"}
                             src={`/images/elvis_gray.jpg`}
